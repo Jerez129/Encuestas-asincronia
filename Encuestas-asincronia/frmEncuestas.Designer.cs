@@ -51,8 +51,8 @@
             rdbtnRespuesta2pregunta2 = new RadioButton();
             rdbtnRespuesta1preguntas1 = new RadioButton();
             pnlPreguntas3 = new Panel();
-            lblPregunta3 = new Label();
             btnDesplegarpregunta3 = new Button();
+            lblPregunta3 = new Label();
             pnlIconopreguntas3 = new Panel();
             pbIconopregunta3 = new PictureBox();
             pnlRespuestas3 = new Panel();
@@ -70,6 +70,7 @@
             rdbtRespuesta1pregunta4 = new RadioButton();
             btnDesplegarpregunta1 = new Button();
             btnEmpezarencuesta = new Button();
+            panel1 = new Panel();
             flowLayoutPanel1.SuspendLayout();
             pnlIconopregunta1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIconopregunta1).BeginInit();
@@ -146,9 +147,11 @@
             flowLayoutPanel1.Controls.Add(pnlPregunta4);
             flowLayoutPanel1.Controls.Add(pnlIconopreguntas4);
             flowLayoutPanel1.Controls.Add(pnlRespuestas4);
+            flowLayoutPanel1.Controls.Add(panel1);
+            flowLayoutPanel1.Controls.Add(btnEmpezarencuesta);
             flowLayoutPanel1.Location = new Point(-4, 87);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(809, 744);
+            flowLayoutPanel1.Size = new Size(809, 789);
             flowLayoutPanel1.TabIndex = 12;
             // 
             // pnlIconopregunta1
@@ -325,18 +328,6 @@
             pnlPreguntas3.Size = new Size(806, 42);
             pnlPreguntas3.TabIndex = 14;
             // 
-            // lblPregunta3
-            // 
-            lblPregunta3.BackColor = Color.FromArgb(3, 43, 65);
-            lblPregunta3.Font = new Font("Constantia", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPregunta3.ForeColor = Color.FromArgb(247, 234, 212);
-            lblPregunta3.Location = new Point(-3, 0);
-            lblPregunta3.Name = "lblPregunta3";
-            lblPregunta3.Size = new Size(806, 39);
-            lblPregunta3.TabIndex = 8;
-            lblPregunta3.Text = "¿Con qué frecuencia toma una ducha a primera hora de la mañana?";
-            lblPregunta3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // btnDesplegarpregunta3
             // 
             btnDesplegarpregunta3.BackColor = Color.FromArgb(3, 43, 65);
@@ -352,6 +343,18 @@
             btnDesplegarpregunta3.TabIndex = 13;
             btnDesplegarpregunta3.UseVisualStyleBackColor = false;
             btnDesplegarpregunta3.Click += button2_Click;
+            // 
+            // lblPregunta3
+            // 
+            lblPregunta3.BackColor = Color.FromArgb(3, 43, 65);
+            lblPregunta3.Font = new Font("Constantia", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPregunta3.ForeColor = Color.FromArgb(247, 234, 212);
+            lblPregunta3.Location = new Point(-3, 0);
+            lblPregunta3.Name = "lblPregunta3";
+            lblPregunta3.Size = new Size(806, 39);
+            lblPregunta3.TabIndex = 8;
+            lblPregunta3.Text = "¿Con qué frecuencia toma una ducha a primera hora de la mañana?";
+            lblPregunta3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlIconopreguntas3
             // 
@@ -542,11 +545,18 @@
             btnEmpezarencuesta.FlatAppearance.MouseDownBackColor = Color.FromArgb(247, 234, 212);
             btnEmpezarencuesta.FlatAppearance.MouseOverBackColor = Color.FromArgb(247, 234, 212);
             btnEmpezarencuesta.FlatStyle = FlatStyle.Flat;
-            btnEmpezarencuesta.Location = new Point(544, 805);
+            btnEmpezarencuesta.Location = new Point(551, 718);
             btnEmpezarencuesta.Name = "btnEmpezarencuesta";
             btnEmpezarencuesta.Size = new Size(244, 85);
             btnEmpezarencuesta.TabIndex = 14;
             btnEmpezarencuesta.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(3, 718);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(542, 125);
+            panel1.TabIndex = 17;
             // 
             // frmEncuestas
             // 
@@ -554,7 +564,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 234, 212);
             ClientSize = new Size(800, 888);
-            Controls.Add(btnEmpezarencuesta);
             Controls.Add(btnDesplegarpregunta1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label6);
@@ -632,5 +641,6 @@
         private Button btnDesplegarpregunta4;
         private Button btnDesplegarpregunta3;
         private Button btnEmpezarencuesta;
+        private Panel panel1;
     }
 }
