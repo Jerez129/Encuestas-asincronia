@@ -22,6 +22,9 @@ namespace Encuestas_asincronia
 
         }
 
+        
+
+        //Botones para despliegue de respuestas para las encuestas
         private void button1_Click(object sender, EventArgs e)
         {
             if (pnlRespuestas1.Visible == true)
