@@ -14,10 +14,10 @@ namespace Encuestas_asincronia
     public partial class frmEncuestas : Form
     {
         Datos datos;
-        public frmEncuestas()
+        public frmEncuestas(Datos datosCompartidos)
         {
             InitializeComponent();
-            datos = new Datos();
+            datos = datosCompartidos;
         }
 
         private void frmEncuestas_Load(object sender, EventArgs e)
@@ -40,13 +40,10 @@ namespace Encuestas_asincronia
                 return; // Salimos sin enviar nada
             }
 
-            if (p1 != -1)
-                await datos.EnviarRespuestaAsync(1, p1);
-            if (p2 != -1)
-                await datos.EnviarRespuestaAsync(2, p2);
-            if (p3 != -1)
+            
+                await datos.EnviarRespuestaAsync(1, p1);          
+                await datos.EnviarRespuestaAsync(2, p2);       
                 await datos.EnviarRespuestaAsync(3, p3);
-            if (p4 != -1)
                 await datos.EnviarRespuestaAsync(4, p4);
 
             MessageBox.Show("Respuesta enviada!");

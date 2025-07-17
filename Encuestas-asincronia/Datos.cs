@@ -16,10 +16,6 @@ namespace Encuestas_asincronia
         public List<int> Pregunta4 = new List<int> { 0, 0, 0 };
 
 
-
-
-
-
         // Evento que se dispara para notificar que los datos han sido actualizados.
         // El formulario principal se suscribirá a este evento para refrescar gráficos y contadores.
         public event Action AlActualizar;
@@ -30,12 +26,9 @@ namespace Encuestas_asincronia
         //   opcion: índice de la opción seleccionada (0 a 2)
         public async Task EnviarRespuestaAsync(int pregunta, int opcion)
         {
-            // Simula latencia de red o procesamiento con un retraso aleatorio entre 500 y 1000 ms.
-            await Task.Delay(new Random().Next(500, 1000));
+            // Simula latencia de red o procesamiento
+            await Task.Delay(1000);
 
-            // Ejecuta el procesamiento en un hilo de fondo para no bloquear la interfaz de usuario.
-            await Task.Run(() =>
-            {
                 // Dependiendo del número de pregunta, incrementa el contador de la opción seleccionada.
                 switch (pregunta)
                 {
@@ -51,9 +44,9 @@ namespace Encuestas_asincronia
                     case 4:
                         Pregunta4[opcion]++;
                         break;
-                        // Opcionalmente, puedes agregar un caso default para manejar errores.
+                     
                 }
-            });
+         
 
             // Dispara el evento para notificar a los suscriptores que los datos cambiaron.
             // Esto permite que el formulario principal actualice los gráficos o contadores.

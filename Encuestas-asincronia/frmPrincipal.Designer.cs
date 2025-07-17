@@ -46,7 +46,7 @@
             plotPregunta1.Location = new Point(12, 12);
             plotPregunta1.Name = "plotPregunta1";
             plotPregunta1.RightToLeft = RightToLeft.No;
-            plotPregunta1.Size = new Size(435, 196);
+            plotPregunta1.Size = new Size(753, 196);
             plotPregunta1.TabIndex = 0;
             // 
             // btnEmpezarencuesta
@@ -57,7 +57,7 @@
             btnEmpezarencuesta.FlatAppearance.MouseDownBackColor = Color.FromArgb(247, 234, 212);
             btnEmpezarencuesta.FlatAppearance.MouseOverBackColor = Color.FromArgb(247, 234, 212);
             btnEmpezarencuesta.FlatStyle = FlatStyle.Flat;
-            btnEmpezarencuesta.Location = new Point(500, 656);
+            btnEmpezarencuesta.Location = new Point(818, 656);
             btnEmpezarencuesta.Name = "btnEmpezarencuesta";
             btnEmpezarencuesta.Size = new Size(258, 86);
             btnEmpezarencuesta.TabIndex = 1;
@@ -71,7 +71,7 @@
             plotPregunta2.Location = new Point(12, 214);
             plotPregunta2.Name = "plotPregunta2";
             plotPregunta2.RightToLeft = RightToLeft.No;
-            plotPregunta2.Size = new Size(435, 196);
+            plotPregunta2.Size = new Size(753, 196);
             plotPregunta2.TabIndex = 2;
             // 
             // plotPregunta3
@@ -81,7 +81,7 @@
             plotPregunta3.Location = new Point(12, 416);
             plotPregunta3.Name = "plotPregunta3";
             plotPregunta3.RightToLeft = RightToLeft.No;
-            plotPregunta3.Size = new Size(435, 196);
+            plotPregunta3.Size = new Size(753, 196);
             plotPregunta3.TabIndex = 3;
             // 
             // plotPregunta4
@@ -91,13 +91,13 @@
             plotPregunta4.Location = new Point(12, 619);
             plotPregunta4.Name = "plotPregunta4";
             plotPregunta4.RightToLeft = RightToLeft.No;
-            plotPregunta4.Size = new Size(435, 196);
+            plotPregunta4.Size = new Size(753, 196);
             plotPregunta4.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Principal_borde;
-            pictureBox1.Location = new Point(453, 22);
+            pictureBox1.Location = new Point(771, 22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(346, 326);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -107,7 +107,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.principal_titulo;
-            pictureBox2.Location = new Point(453, 388);
+            pictureBox2.Location = new Point(771, 388);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(346, 224);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -119,7 +119,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 234, 212);
-            ClientSize = new Size(800, 818);
+            ClientSize = new Size(1129, 818);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(plotPregunta4);
