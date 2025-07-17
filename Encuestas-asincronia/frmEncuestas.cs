@@ -13,7 +13,10 @@ namespace Encuestas_asincronia
 {
     public partial class frmEncuestas : Form
     {
-        Datos datos;
+        Datos datos; //Objeto compartido que contendrá las respuestas de las encuestas
+
+        //constructor que recibe el objeto Datos compartido desde el formulario principal, se hizo de esta manera para que el formulario
+        //de encuestas pueda enviar las respuestas al objeto Datos y este pueda ser actualizado en el formulario principal
         public frmEncuestas(Datos datosCompartidos)
         {
             InitializeComponent();
@@ -24,10 +27,12 @@ namespace Encuestas_asincronia
         {
 
         }
-       
+
+        // Evento del botón "Empezar encuesta"
         private async void btnEmpezarencuesta_Click(object sender, EventArgs e)
         {
 
+            // Obtenemos las respuestas seleccionadas de cada grupo de RadioButtons
             int p1 = ObtenerOpcionSeleccionada(gbRespuestas1);
             int p2 = ObtenerOpcionSeleccionada(gbRespuestas2);
             int p3 = ObtenerOpcionSeleccionada(gbRespuestas3);
@@ -37,10 +42,10 @@ namespace Encuestas_asincronia
             if (p1 == -1 || p2 == -1 || p3 == -1 || p4 == -1)
             {
                 MessageBox.Show("Por favor, responde todas las preguntas antes de enviar la encuesta.", "Faltan respuestas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // Salimos sin enviar nada
+                return; // Si alguna pregunta no está respondida, salimos del método
             }
 
-            
+            // Se envían las respuestas de forma asíncrona, una por una
                 await datos.EnviarRespuestaAsync(1, p1);          
                 await datos.EnviarRespuestaAsync(2, p2);       
                 await datos.EnviarRespuestaAsync(3, p3);
@@ -51,16 +56,22 @@ namespace Encuestas_asincronia
         }
 
 
-
+        // Método para obtener qué opción de un GroupBox (pregunta) fue seleccionada
         private int ObtenerOpcionSeleccionada(GroupBox grupo)
         {
+            // Obtiene todos los controles del tipo RadioButton dentro del GroupBox
             var radios = grupo.Controls.OfType<RadioButton>().ToList();
+
+            // Recorre la lista de RadioButtons
             for (int i = 0; i < radios.Count; i++)
             {
+                // Si este RadioButton está seleccionado (Checked == true), devuelve su índice
                 if (radios[i].Checked)
                     return i;
             }
-            return -1; // Ningún RadioButton seleccionado
+            // Si ninguno fue seleccionado, retorna -1
+
+            return -1; 
         }
 
 
