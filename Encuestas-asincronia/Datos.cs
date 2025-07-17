@@ -16,10 +16,6 @@ namespace Encuestas_asincronia
         public List<int> Pregunta4 = new List<int> { 0, 0, 0 };
 
 
-
-
-
-
         // Evento que se dispara para notificar que los datos han sido actualizados.
         // El formulario principal se suscribirá a este evento para refrescar gráficos y contadores.
         public event Action AlActualizar;

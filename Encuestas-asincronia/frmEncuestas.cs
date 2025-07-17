@@ -14,10 +14,10 @@ namespace Encuestas_asincronia
     public partial class frmEncuestas : Form
     {
         Datos datos;
-        public frmEncuestas()
+        public frmEncuestas(Datos datosCompartidos)
         {
             InitializeComponent();
-            datos = new Datos();
+            datos = datosCompartidos;
         }
 
         private void frmEncuestas_Load(object sender, EventArgs e)
