@@ -78,6 +78,8 @@ namespace Encuestas_asincronia
             plotControl.Refresh();
         }
 
+
+
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
           
