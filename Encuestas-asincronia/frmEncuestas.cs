@@ -22,7 +22,39 @@ namespace Encuestas_asincronia
 
         }
 
-        
+        private void btnEmpezarencuesta_Click(object sender, EventArgs e)
+        {
+            List<string> respuestas = new List<string>();
+
+            // Obtener la respuesta seleccionada del groupBox "gbRespuestas1"
+            respuestas.Add(ObtenerRespuestaSeleccionada(gbRespuestas1));
+
+            // Mostrar las respuestas (puedes extender esto para más preguntas)
+            for (int i = 0; i < respuestas.Count; i++)
+            {
+                MessageBox.Show($"Pregunta {i + 1}: {respuestas[i]}");
+            }
+        }
+
+        // Método para obtener qué RadioButton está seleccionado dentro de un GroupBox
+        private string ObtenerRespuestaSeleccionada(GroupBox miGroupBox)
+        {
+            foreach (Control control in miGroupBox.Controls)
+            {
+                if (control is RadioButton radio && radio.Checked)
+                {
+                    return radio.Text;
+                }
+            }
+            return "Sin respuesta";
+        }
+
+
+
+
+
+
+
 
         //Botones para despliegue de respuestas para las encuestas
         private void button1_Click(object sender, EventArgs e)
@@ -96,7 +128,7 @@ namespace Encuestas_asincronia
             if (pnlRespuestas4.Visible == true)
             {
                 pnlRespuestas4.Visible = false;
-        
+
             }
             else
             {
@@ -105,12 +137,13 @@ namespace Encuestas_asincronia
 
             if (pnlIconopreguntas4.Visible == true)
             {
-                pnlIconopreguntas4 .Visible = false;
+                pnlIconopreguntas4.Visible = false;
             }
             else
             {
                 pnlIconopreguntas4.Visible = true;
             }
         }
+
     }
 }
