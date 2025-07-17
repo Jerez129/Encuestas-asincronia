@@ -38,55 +38,63 @@
             pnlIconopregunta1 = new Panel();
             pbIconopregunta1 = new PictureBox();
             pnlRespuestas1 = new Panel();
-            rdbtnRespuesta3pregunta1 = new RadioButton();
-            rdbtnPregunta1respuesta2 = new RadioButton();
-            rdbtnPregunta1respuesta1 = new RadioButton();
+            gbRespuestas1 = new GroupBox();
             pnlPreguntas2 = new Panel();
             btnDesplegarpregunta2 = new Button();
             lblPregunta2 = new Label();
             pnlIconopreguntas2 = new Panel();
             pbIconopregunta2 = new PictureBox();
             pnlRespuestas2 = new Panel();
-            rdbtRespuesta3pregunta2 = new RadioButton();
-            rdbtnRespuesta2pregunta2 = new RadioButton();
-            rdbtnRespuesta1preguntas1 = new RadioButton();
+            gbRespuestas2 = new GroupBox();
             pnlPreguntas3 = new Panel();
             btnDesplegarpregunta3 = new Button();
             lblPregunta3 = new Label();
             pnlIconopreguntas3 = new Panel();
             pbIconopregunta3 = new PictureBox();
             pnlRespuestas3 = new Panel();
+            gbRespuestas3 = new GroupBox();
             rdbtRespuesta3pregunta3 = new RadioButton();
-            rdbtRespuesta2pregunta3 = new RadioButton();
-            rdbtRespuesta1pregunta3 = new RadioButton();
             pnlPregunta4 = new Panel();
             btnDesplegarpregunta4 = new Button();
             lblPregunta4 = new Label();
             pnlIconopreguntas4 = new Panel();
             pictureBox3 = new PictureBox();
             pnlRespuestas4 = new Panel();
+            gbRespuestas4 = new GroupBox();
             rdbtRespuesta3pregunta4 = new RadioButton();
+            panel1 = new Panel();
+            btnEmpezarencuesta = new Button();
+            btnDesplegarpregunta1 = new Button();
+            rdbtnRespuesta3pregunta1 = new RadioButton();
+            rdbtnRespuesta2pregunta1 = new RadioButton();
+            rdbtnRespuesta1pregunta1 = new RadioButton();
+            rdbtRespuesta3pregunta2 = new RadioButton();
+            rdbtRespuesta2pregunta2 = new RadioButton();
+            rdbtRespuesta1pregunta2 = new RadioButton();
+            rdbtRespuesta2pregunta3 = new RadioButton();
+            rdbtRespuesta1pregunta3 = new RadioButton();
             rdbtRespuesta2pregunta4 = new RadioButton();
             rdbtRespuesta1pregunta4 = new RadioButton();
-            btnDesplegarpregunta1 = new Button();
-            btnEmpezarencuesta = new Button();
-            panel1 = new Panel();
             flowLayoutPanel1.SuspendLayout();
             pnlIconopregunta1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIconopregunta1).BeginInit();
             pnlRespuestas1.SuspendLayout();
+            gbRespuestas1.SuspendLayout();
             pnlPreguntas2.SuspendLayout();
             pnlIconopreguntas2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIconopregunta2).BeginInit();
             pnlRespuestas2.SuspendLayout();
+            gbRespuestas2.SuspendLayout();
             pnlPreguntas3.SuspendLayout();
             pnlIconopreguntas3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIconopregunta3).BeginInit();
             pnlRespuestas3.SuspendLayout();
+            gbRespuestas3.SuspendLayout();
             pnlPregunta4.SuspendLayout();
             pnlIconopreguntas4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pnlRespuestas4.SuspendLayout();
+            gbRespuestas4.SuspendLayout();
             SuspendLayout();
             // 
             // lblA
@@ -174,49 +182,23 @@
             // 
             // pnlRespuestas1
             // 
-            pnlRespuestas1.Controls.Add(rdbtnRespuesta3pregunta1);
-            pnlRespuestas1.Controls.Add(rdbtnPregunta1respuesta2);
-            pnlRespuestas1.Controls.Add(rdbtnPregunta1respuesta1);
+            pnlRespuestas1.Controls.Add(gbRespuestas1);
             pnlRespuestas1.Location = new Point(268, 3);
             pnlRespuestas1.Name = "pnlRespuestas1";
             pnlRespuestas1.Size = new Size(415, 135);
             pnlRespuestas1.TabIndex = 1;
             // 
-            // rdbtnRespuesta3pregunta1
+            // gbRespuestas1
             // 
-            rdbtnRespuesta3pregunta1.AutoSize = true;
-            rdbtnRespuesta3pregunta1.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtnRespuesta3pregunta1.Location = new Point(74, 85);
-            rdbtnRespuesta3pregunta1.Name = "rdbtnRespuesta3pregunta1";
-            rdbtnRespuesta3pregunta1.Size = new Size(316, 28);
-            rdbtnRespuesta3pregunta1.TabIndex = 3;
-            rdbtnRespuesta3pregunta1.TabStop = true;
-            rdbtnRespuesta3pregunta1.Text = "Preparar y consumir el desayuno";
-            rdbtnRespuesta3pregunta1.UseVisualStyleBackColor = true;
-            // 
-            // rdbtnPregunta1respuesta2
-            // 
-            rdbtnPregunta1respuesta2.AutoSize = true;
-            rdbtnPregunta1respuesta2.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtnPregunta1respuesta2.Location = new Point(74, 44);
-            rdbtnPregunta1respuesta2.Name = "rdbtnPregunta1respuesta2";
-            rdbtnPregunta1respuesta2.Size = new Size(270, 28);
-            rdbtnPregunta1respuesta2.TabIndex = 2;
-            rdbtnPregunta1respuesta2.TabStop = true;
-            rdbtnPregunta1respuesta2.Text = "Consultar el teléfono móvil";
-            rdbtnPregunta1respuesta2.UseVisualStyleBackColor = true;
-            // 
-            // rdbtnPregunta1respuesta1
-            // 
-            rdbtnPregunta1respuesta1.AutoSize = true;
-            rdbtnPregunta1respuesta1.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtnPregunta1respuesta1.Location = new Point(74, 3);
-            rdbtnPregunta1respuesta1.Name = "rdbtnPregunta1respuesta1";
-            rdbtnPregunta1respuesta1.Size = new Size(233, 28);
-            rdbtnPregunta1respuesta1.TabIndex = 1;
-            rdbtnPregunta1respuesta1.TabStop = true;
-            rdbtnPregunta1respuesta1.Text = "Realizar ejercicio físico";
-            rdbtnPregunta1respuesta1.UseVisualStyleBackColor = true;
+            gbRespuestas1.BackgroundImageLayout = ImageLayout.None;
+            gbRespuestas1.Controls.Add(rdbtnRespuesta1pregunta1);
+            gbRespuestas1.Controls.Add(rdbtnRespuesta2pregunta1);
+            gbRespuestas1.Controls.Add(rdbtnRespuesta3pregunta1);
+            gbRespuestas1.Location = new Point(3, -3);
+            gbRespuestas1.Name = "gbRespuestas1";
+            gbRespuestas1.Size = new Size(387, 116);
+            gbRespuestas1.TabIndex = 4;
+            gbRespuestas1.TabStop = false;
             // 
             // pnlPreguntas2
             // 
@@ -275,49 +257,22 @@
             // 
             // pnlRespuestas2
             // 
-            pnlRespuestas2.Controls.Add(rdbtRespuesta3pregunta2);
-            pnlRespuestas2.Controls.Add(rdbtnRespuesta2pregunta2);
-            pnlRespuestas2.Controls.Add(rdbtnRespuesta1preguntas1);
+            pnlRespuestas2.Controls.Add(gbRespuestas2);
             pnlRespuestas2.Location = new Point(262, 199);
             pnlRespuestas2.Name = "pnlRespuestas2";
             pnlRespuestas2.Size = new Size(415, 135);
             pnlRespuestas2.TabIndex = 14;
             // 
-            // rdbtRespuesta3pregunta2
+            // gbRespuestas2
             // 
-            rdbtRespuesta3pregunta2.AutoSize = true;
-            rdbtRespuesta3pregunta2.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtRespuesta3pregunta2.Location = new Point(74, 85);
-            rdbtRespuesta3pregunta2.Name = "rdbtRespuesta3pregunta2";
-            rdbtRespuesta3pregunta2.Size = new Size(249, 28);
-            rdbtRespuesta3pregunta2.TabIndex = 3;
-            rdbtRespuesta3pregunta2.TabStop = true;
-            rdbtRespuesta3pregunta2.Text = "Después de las 8:00 a. m.";
-            rdbtRespuesta3pregunta2.UseVisualStyleBackColor = true;
-            // 
-            // rdbtnRespuesta2pregunta2
-            // 
-            rdbtnRespuesta2pregunta2.AutoSize = true;
-            rdbtnRespuesta2pregunta2.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtnRespuesta2pregunta2.Location = new Point(74, 44);
-            rdbtnRespuesta2pregunta2.Name = "rdbtnRespuesta2pregunta2";
-            rdbtnRespuesta2pregunta2.Size = new Size(285, 28);
-            rdbtnRespuesta2pregunta2.TabIndex = 2;
-            rdbtnRespuesta2pregunta2.TabStop = true;
-            rdbtnRespuesta2pregunta2.Text = "Entre las 6:00 y las 8:00 a. m.";
-            rdbtnRespuesta2pregunta2.UseVisualStyleBackColor = true;
-            // 
-            // rdbtnRespuesta1preguntas1
-            // 
-            rdbtnRespuesta1preguntas1.AutoSize = true;
-            rdbtnRespuesta1preguntas1.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtnRespuesta1preguntas1.Location = new Point(74, 3);
-            rdbtnRespuesta1preguntas1.Name = "rdbtnRespuesta1preguntas1";
-            rdbtnRespuesta1preguntas1.Size = new Size(226, 28);
-            rdbtnRespuesta1preguntas1.TabIndex = 1;
-            rdbtnRespuesta1preguntas1.TabStop = true;
-            rdbtnRespuesta1preguntas1.Text = "Antes de las 6:00 a. m.";
-            rdbtnRespuesta1preguntas1.UseVisualStyleBackColor = true;
+            gbRespuestas2.Controls.Add(rdbtRespuesta1pregunta2);
+            gbRespuestas2.Controls.Add(rdbtRespuesta2pregunta2);
+            gbRespuestas2.Controls.Add(rdbtRespuesta3pregunta2);
+            gbRespuestas2.Location = new Point(9, 0);
+            gbRespuestas2.Name = "gbRespuestas2";
+            gbRespuestas2.Size = new Size(387, 125);
+            gbRespuestas2.TabIndex = 9;
+            gbRespuestas2.TabStop = false;
             // 
             // pnlPreguntas3
             // 
@@ -376,49 +331,34 @@
             // 
             // pnlRespuestas3
             // 
-            pnlRespuestas3.Controls.Add(rdbtRespuesta3pregunta3);
-            pnlRespuestas3.Controls.Add(rdbtRespuesta2pregunta3);
-            pnlRespuestas3.Controls.Add(rdbtRespuesta1pregunta3);
+            pnlRespuestas3.Controls.Add(gbRespuestas3);
             pnlRespuestas3.Location = new Point(262, 388);
             pnlRespuestas3.Name = "pnlRespuestas3";
             pnlRespuestas3.Size = new Size(415, 135);
             pnlRespuestas3.TabIndex = 15;
             // 
+            // gbRespuestas3
+            // 
+            gbRespuestas3.Controls.Add(rdbtRespuesta1pregunta3);
+            gbRespuestas3.Controls.Add(rdbtRespuesta2pregunta3);
+            gbRespuestas3.Controls.Add(rdbtRespuesta3pregunta3);
+            gbRespuestas3.Location = new Point(9, 3);
+            gbRespuestas3.Name = "gbRespuestas3";
+            gbRespuestas3.Size = new Size(387, 125);
+            gbRespuestas3.TabIndex = 4;
+            gbRespuestas3.TabStop = false;
+            // 
             // rdbtRespuesta3pregunta3
             // 
             rdbtRespuesta3pregunta3.AutoSize = true;
             rdbtRespuesta3pregunta3.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtRespuesta3pregunta3.Location = new Point(74, 85);
+            rdbtRespuesta3pregunta3.Location = new Point(66, 82);
             rdbtRespuesta3pregunta3.Name = "rdbtRespuesta3pregunta3";
             rdbtRespuesta3pregunta3.Size = new Size(181, 28);
-            rdbtRespuesta3pregunta3.TabIndex = 3;
+            rdbtRespuesta3pregunta3.TabIndex = 4;
             rdbtRespuesta3pregunta3.TabStop = true;
             rdbtRespuesta3pregunta3.Text = "Rara vez o nunca";
             rdbtRespuesta3pregunta3.UseVisualStyleBackColor = true;
-            // 
-            // rdbtRespuesta2pregunta3
-            // 
-            rdbtRespuesta2pregunta3.AutoSize = true;
-            rdbtRespuesta2pregunta3.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtRespuesta2pregunta3.Location = new Point(74, 44);
-            rdbtRespuesta2pregunta3.Name = "rdbtRespuesta2pregunta3";
-            rdbtRespuesta2pregunta3.Size = new Size(95, 28);
-            rdbtRespuesta2pregunta3.TabIndex = 2;
-            rdbtRespuesta2pregunta3.TabStop = true;
-            rdbtRespuesta2pregunta3.Text = "A veces";
-            rdbtRespuesta2pregunta3.UseVisualStyleBackColor = true;
-            // 
-            // rdbtRespuesta1pregunta3
-            // 
-            rdbtRespuesta1pregunta3.AutoSize = true;
-            rdbtRespuesta1pregunta3.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtRespuesta1pregunta3.Location = new Point(74, 3);
-            rdbtRespuesta1pregunta3.Name = "rdbtRespuesta1pregunta3";
-            rdbtRespuesta1pregunta3.Size = new Size(103, 28);
-            rdbtRespuesta1pregunta3.TabIndex = 1;
-            rdbtRespuesta1pregunta3.TabStop = true;
-            rdbtRespuesta1pregunta3.Text = "Siempre";
-            rdbtRespuesta1pregunta3.UseVisualStyleBackColor = true;
             // 
             // pnlPregunta4
             // 
@@ -477,49 +417,56 @@
             // 
             // pnlRespuestas4
             // 
-            pnlRespuestas4.Controls.Add(rdbtRespuesta3pregunta4);
-            pnlRespuestas4.Controls.Add(rdbtRespuesta2pregunta4);
-            pnlRespuestas4.Controls.Add(rdbtRespuesta1pregunta4);
+            pnlRespuestas4.Controls.Add(gbRespuestas4);
             pnlRespuestas4.Location = new Point(262, 577);
             pnlRespuestas4.Name = "pnlRespuestas4";
             pnlRespuestas4.Size = new Size(507, 135);
             pnlRespuestas4.TabIndex = 16;
             // 
+            // gbRespuestas4
+            // 
+            gbRespuestas4.Controls.Add(rdbtRespuesta1pregunta4);
+            gbRespuestas4.Controls.Add(rdbtRespuesta2pregunta4);
+            gbRespuestas4.Controls.Add(rdbtRespuesta3pregunta4);
+            gbRespuestas4.Location = new Point(9, 7);
+            gbRespuestas4.Name = "gbRespuestas4";
+            gbRespuestas4.Size = new Size(495, 125);
+            gbRespuestas4.TabIndex = 5;
+            gbRespuestas4.TabStop = false;
+            // 
             // rdbtRespuesta3pregunta4
             // 
             rdbtRespuesta3pregunta4.AutoSize = true;
             rdbtRespuesta3pregunta4.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtRespuesta3pregunta4.Location = new Point(74, 85);
+            rdbtRespuesta3pregunta4.Location = new Point(65, 80);
             rdbtRespuesta3pregunta4.Name = "rdbtRespuesta3pregunta4";
             rdbtRespuesta3pregunta4.Size = new Size(427, 28);
-            rdbtRespuesta3pregunta4.TabIndex = 3;
+            rdbtRespuesta3pregunta4.TabIndex = 6;
             rdbtRespuesta3pregunta4.TabStop = true;
             rdbtRespuesta3pregunta4.Text = "Bajo (necesito más tiempo para despertarme)";
             rdbtRespuesta3pregunta4.UseVisualStyleBackColor = true;
             // 
-            // rdbtRespuesta2pregunta4
+            // panel1
             // 
-            rdbtRespuesta2pregunta4.AutoSize = true;
-            rdbtRespuesta2pregunta4.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtRespuesta2pregunta4.Location = new Point(74, 44);
-            rdbtRespuesta2pregunta4.Name = "rdbtRespuesta2pregunta4";
-            rdbtRespuesta2pregunta4.Size = new Size(352, 28);
-            rdbtRespuesta2pregunta4.TabIndex = 2;
-            rdbtRespuesta2pregunta4.TabStop = true;
-            rdbtRespuesta2pregunta4.Text = "Moderado (me activo gradualmente)";
-            rdbtRespuesta2pregunta4.UseVisualStyleBackColor = true;
+            panel1.Location = new Point(3, 718);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(542, 125);
+            panel1.TabIndex = 17;
             // 
-            // rdbtRespuesta1pregunta4
+            // btnEmpezarencuesta
             // 
-            rdbtRespuesta1pregunta4.AutoSize = true;
-            rdbtRespuesta1pregunta4.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rdbtRespuesta1pregunta4.Location = new Point(74, 3);
-            rdbtRespuesta1pregunta4.Name = "rdbtRespuesta1pregunta4";
-            rdbtRespuesta1pregunta4.Size = new Size(355, 28);
-            rdbtRespuesta1pregunta4.TabIndex = 1;
-            rdbtRespuesta1pregunta4.TabStop = true;
-            rdbtRespuesta1pregunta4.Text = "Alto (me siento con mucha vitalidad)";
-            rdbtRespuesta1pregunta4.UseVisualStyleBackColor = true;
+            btnEmpezarencuesta.BackgroundImage = Properties.Resources.enviarrespuesta;
+            btnEmpezarencuesta.BackgroundImageLayout = ImageLayout.Zoom;
+            btnEmpezarencuesta.FlatAppearance.BorderColor = Color.FromArgb(247, 234, 212);
+            btnEmpezarencuesta.FlatAppearance.MouseDownBackColor = Color.FromArgb(247, 234, 212);
+            btnEmpezarencuesta.FlatAppearance.MouseOverBackColor = Color.FromArgb(247, 234, 212);
+            btnEmpezarencuesta.FlatStyle = FlatStyle.Flat;
+            btnEmpezarencuesta.Location = new Point(551, 718);
+            btnEmpezarencuesta.Name = "btnEmpezarencuesta";
+            btnEmpezarencuesta.Size = new Size(244, 85);
+            btnEmpezarencuesta.TabIndex = 14;
+            btnEmpezarencuesta.UseVisualStyleBackColor = true;
+            btnEmpezarencuesta.Click += btnEmpezarencuesta_Click;
             // 
             // btnDesplegarpregunta1
             // 
@@ -537,26 +484,125 @@
             btnDesplegarpregunta1.UseVisualStyleBackColor = false;
             btnDesplegarpregunta1.Click += button1_Click;
             // 
-            // btnEmpezarencuesta
+            // rdbtnRespuesta3pregunta1
             // 
-            btnEmpezarencuesta.BackgroundImage = Properties.Resources.enviarrespuesta;
-            btnEmpezarencuesta.BackgroundImageLayout = ImageLayout.Zoom;
-            btnEmpezarencuesta.FlatAppearance.BorderColor = Color.FromArgb(247, 234, 212);
-            btnEmpezarencuesta.FlatAppearance.MouseDownBackColor = Color.FromArgb(247, 234, 212);
-            btnEmpezarencuesta.FlatAppearance.MouseOverBackColor = Color.FromArgb(247, 234, 212);
-            btnEmpezarencuesta.FlatStyle = FlatStyle.Flat;
-            btnEmpezarencuesta.Location = new Point(551, 718);
-            btnEmpezarencuesta.Name = "btnEmpezarencuesta";
-            btnEmpezarencuesta.Size = new Size(244, 85);
-            btnEmpezarencuesta.TabIndex = 14;
-            btnEmpezarencuesta.UseVisualStyleBackColor = true;
+            rdbtnRespuesta3pregunta1.AutoSize = true;
+            rdbtnRespuesta3pregunta1.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtnRespuesta3pregunta1.Location = new Point(65, 81);
+            rdbtnRespuesta3pregunta1.Name = "rdbtnRespuesta3pregunta1";
+            rdbtnRespuesta3pregunta1.Size = new Size(316, 28);
+            rdbtnRespuesta3pregunta1.TabIndex = 10;
+            rdbtnRespuesta3pregunta1.TabStop = true;
+            rdbtnRespuesta3pregunta1.Text = "Preparar y consumir el desayuno";
+            rdbtnRespuesta3pregunta1.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // rdbtnRespuesta2pregunta1
             // 
-            panel1.Location = new Point(3, 718);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(542, 125);
-            panel1.TabIndex = 17;
+            rdbtnRespuesta2pregunta1.AutoSize = true;
+            rdbtnRespuesta2pregunta1.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtnRespuesta2pregunta1.Location = new Point(66, 47);
+            rdbtnRespuesta2pregunta1.Name = "rdbtnRespuesta2pregunta1";
+            rdbtnRespuesta2pregunta1.Size = new Size(270, 28);
+            rdbtnRespuesta2pregunta1.TabIndex = 12;
+            rdbtnRespuesta2pregunta1.TabStop = true;
+            rdbtnRespuesta2pregunta1.Text = "Consultar el teléfono móvil";
+            rdbtnRespuesta2pregunta1.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnRespuesta1pregunta1
+            // 
+            rdbtnRespuesta1pregunta1.AutoSize = true;
+            rdbtnRespuesta1pregunta1.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtnRespuesta1pregunta1.Location = new Point(66, 13);
+            rdbtnRespuesta1pregunta1.Name = "rdbtnRespuesta1pregunta1";
+            rdbtnRespuesta1pregunta1.Size = new Size(233, 28);
+            rdbtnRespuesta1pregunta1.TabIndex = 13;
+            rdbtnRespuesta1pregunta1.TabStop = true;
+            rdbtnRespuesta1pregunta1.Text = "Realizar ejercicio físico";
+            rdbtnRespuesta1pregunta1.UseVisualStyleBackColor = true;
+            // 
+            // rdbtRespuesta3pregunta2
+            // 
+            rdbtRespuesta3pregunta2.AutoSize = true;
+            rdbtRespuesta3pregunta2.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtRespuesta3pregunta2.Location = new Point(65, 82);
+            rdbtRespuesta3pregunta2.Name = "rdbtRespuesta3pregunta2";
+            rdbtRespuesta3pregunta2.Size = new Size(249, 28);
+            rdbtRespuesta3pregunta2.TabIndex = 7;
+            rdbtRespuesta3pregunta2.TabStop = true;
+            rdbtRespuesta3pregunta2.Text = "Después de las 8:00 a. m.";
+            rdbtRespuesta3pregunta2.UseVisualStyleBackColor = true;
+            // 
+            // rdbtRespuesta2pregunta2
+            // 
+            rdbtRespuesta2pregunta2.AutoSize = true;
+            rdbtRespuesta2pregunta2.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtRespuesta2pregunta2.Location = new Point(65, 48);
+            rdbtRespuesta2pregunta2.Name = "rdbtRespuesta2pregunta2";
+            rdbtRespuesta2pregunta2.Size = new Size(285, 28);
+            rdbtRespuesta2pregunta2.TabIndex = 8;
+            rdbtRespuesta2pregunta2.TabStop = true;
+            rdbtRespuesta2pregunta2.Text = "Entre las 6:00 y las 8:00 a. m.";
+            rdbtRespuesta2pregunta2.UseVisualStyleBackColor = true;
+            // 
+            // rdbtRespuesta1pregunta2
+            // 
+            rdbtRespuesta1pregunta2.AutoSize = true;
+            rdbtRespuesta1pregunta2.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtRespuesta1pregunta2.Location = new Point(65, 14);
+            rdbtRespuesta1pregunta2.Name = "rdbtRespuesta1pregunta2";
+            rdbtRespuesta1pregunta2.Size = new Size(226, 28);
+            rdbtRespuesta1pregunta2.TabIndex = 9;
+            rdbtRespuesta1pregunta2.TabStop = true;
+            rdbtRespuesta1pregunta2.Text = "Antes de las 6:00 a. m.";
+            rdbtRespuesta1pregunta2.UseVisualStyleBackColor = true;
+            // 
+            // rdbtRespuesta2pregunta3
+            // 
+            rdbtRespuesta2pregunta3.AutoSize = true;
+            rdbtRespuesta2pregunta3.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtRespuesta2pregunta3.Location = new Point(65, 48);
+            rdbtRespuesta2pregunta3.Name = "rdbtRespuesta2pregunta3";
+            rdbtRespuesta2pregunta3.Size = new Size(95, 28);
+            rdbtRespuesta2pregunta3.TabIndex = 6;
+            rdbtRespuesta2pregunta3.TabStop = true;
+            rdbtRespuesta2pregunta3.Text = "A veces";
+            rdbtRespuesta2pregunta3.UseVisualStyleBackColor = true;
+            // 
+            // rdbtRespuesta1pregunta3
+            // 
+            rdbtRespuesta1pregunta3.AutoSize = true;
+            rdbtRespuesta1pregunta3.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtRespuesta1pregunta3.Location = new Point(66, 14);
+            rdbtRespuesta1pregunta3.Name = "rdbtRespuesta1pregunta3";
+            rdbtRespuesta1pregunta3.Size = new Size(103, 28);
+            rdbtRespuesta1pregunta3.TabIndex = 7;
+            rdbtRespuesta1pregunta3.TabStop = true;
+            rdbtRespuesta1pregunta3.Text = "Siempre";
+            rdbtRespuesta1pregunta3.UseVisualStyleBackColor = true;
+            // 
+            // rdbtRespuesta2pregunta4
+            // 
+            rdbtRespuesta2pregunta4.AutoSize = true;
+            rdbtRespuesta2pregunta4.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtRespuesta2pregunta4.Location = new Point(65, 46);
+            rdbtRespuesta2pregunta4.Name = "rdbtRespuesta2pregunta4";
+            rdbtRespuesta2pregunta4.Size = new Size(352, 28);
+            rdbtRespuesta2pregunta4.TabIndex = 7;
+            rdbtRespuesta2pregunta4.TabStop = true;
+            rdbtRespuesta2pregunta4.Text = "Moderado (me activo gradualmente)";
+            rdbtRespuesta2pregunta4.UseVisualStyleBackColor = true;
+            // 
+            // rdbtRespuesta1pregunta4
+            // 
+            rdbtRespuesta1pregunta4.AutoSize = true;
+            rdbtRespuesta1pregunta4.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdbtRespuesta1pregunta4.Location = new Point(65, 12);
+            rdbtRespuesta1pregunta4.Name = "rdbtRespuesta1pregunta4";
+            rdbtRespuesta1pregunta4.Size = new Size(355, 28);
+            rdbtRespuesta1pregunta4.TabIndex = 8;
+            rdbtRespuesta1pregunta4.TabStop = true;
+            rdbtRespuesta1pregunta4.Text = "Alto (me siento con mucha vitalidad)";
+            rdbtRespuesta1pregunta4.UseVisualStyleBackColor = true;
             // 
             // frmEncuestas
             // 
@@ -578,22 +624,26 @@
             pnlIconopregunta1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbIconopregunta1).EndInit();
             pnlRespuestas1.ResumeLayout(false);
-            pnlRespuestas1.PerformLayout();
+            gbRespuestas1.ResumeLayout(false);
+            gbRespuestas1.PerformLayout();
             pnlPreguntas2.ResumeLayout(false);
             pnlIconopreguntas2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbIconopregunta2).EndInit();
             pnlRespuestas2.ResumeLayout(false);
-            pnlRespuestas2.PerformLayout();
+            gbRespuestas2.ResumeLayout(false);
+            gbRespuestas2.PerformLayout();
             pnlPreguntas3.ResumeLayout(false);
             pnlIconopreguntas3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbIconopregunta3).EndInit();
             pnlRespuestas3.ResumeLayout(false);
-            pnlRespuestas3.PerformLayout();
+            gbRespuestas3.ResumeLayout(false);
+            gbRespuestas3.PerformLayout();
             pnlPregunta4.ResumeLayout(false);
             pnlIconopreguntas4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             pnlRespuestas4.ResumeLayout(false);
-            pnlRespuestas4.PerformLayout();
+            gbRespuestas4.ResumeLayout(false);
+            gbRespuestas4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -608,9 +658,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Button btnDesplegarpregunta1;
         private Panel pnlRespuestas1;
-        private RadioButton rdbtnRespuesta3pregunta1;
-        private RadioButton rdbtnPregunta1respuesta2;
-        private RadioButton rdbtnPregunta1respuesta1;
         private Panel pnlIconopregunta1;
         private PictureBox pbIconopregunta1;
         private Label lblPregunta2;
@@ -618,15 +665,9 @@
         private PictureBox pbIconopregunta2;
         private Panel pnlPreguntas2;
         private Panel pnlRespuestas2;
-        private RadioButton rdbtRespuesta3pregunta2;
-        private RadioButton rdbtnRespuesta2pregunta2;
-        private RadioButton rdbtnRespuesta1preguntas1;
         private Panel pnlIconopreguntas3;
         private PictureBox pbIconopregunta3;
         private Panel pnlRespuestas3;
-        private RadioButton rdbtRespuesta3pregunta3;
-        private RadioButton rdbtRespuesta2pregunta3;
-        private RadioButton rdbtRespuesta1pregunta3;
         private Panel pnlPreguntas3;
         private Label lblPregunta3;
         private Panel pnlPregunta4;
@@ -634,13 +675,26 @@
         private Panel pnlIconopreguntas4;
         private PictureBox pictureBox3;
         private Panel pnlRespuestas4;
-        private RadioButton rdbtRespuesta3pregunta4;
-        private RadioButton rdbtRespuesta2pregunta4;
-        private RadioButton rdbtRespuesta1pregunta4;
         private Button btnDesplegarpregunta2;
         private Button btnDesplegarpregunta4;
         private Button btnDesplegarpregunta3;
         private Button btnEmpezarencuesta;
         private Panel panel1;
+        private GroupBox gbRespuestas1;
+        private GroupBox gbRespuestas2;
+        private GroupBox gbRespuestas3;
+        private RadioButton rdbtRespuesta3pregunta3;
+        private GroupBox gbRespuestas4;
+        private RadioButton rdbtRespuesta3pregunta4;
+        private RadioButton rdbtnRespuesta1pregunta1;
+        private RadioButton rdbtnRespuesta2pregunta1;
+        private RadioButton rdbtnRespuesta3pregunta1;
+        private RadioButton rdbtRespuesta1pregunta2;
+        private RadioButton rdbtRespuesta2pregunta2;
+        private RadioButton rdbtRespuesta3pregunta2;
+        private RadioButton rdbtRespuesta2pregunta3;
+        private RadioButton rdbtRespuesta1pregunta3;
+        private RadioButton rdbtRespuesta1pregunta4;
+        private RadioButton rdbtRespuesta2pregunta4;
     }
 }

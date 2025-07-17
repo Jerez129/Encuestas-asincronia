@@ -5,10 +5,12 @@ namespace Encuestas_asincronia
 {
     public partial class frmPrincipal : Form
     {
+        Datos datos = new Datos();
         public frmPrincipal()
         {
             InitializeComponent();
             MostrarGrafico();
+           
         }
 
         private void btnEmpezarencuesta_Click(object sender, EventArgs e)
