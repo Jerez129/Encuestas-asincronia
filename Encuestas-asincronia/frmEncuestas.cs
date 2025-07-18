@@ -46,10 +46,11 @@ namespace Encuestas_asincronia
             }
 
             // Se envían las respuestas de forma asíncrona, una por una
-                await datos.EnviarRespuestaAsync(1, p1);          
-                await datos.EnviarRespuestaAsync(2, p2);       
-                await datos.EnviarRespuestaAsync(3, p3);
-                await datos.EnviarRespuestaAsync(4, p4);
+             await Task.WhenAll(
+                 datos.EnviarRespuestaAsync(1, p1),
+                datos.EnviarRespuestaAsync(2, p2),
+                datos.EnviarRespuestaAsync(3, p3),
+                datos.EnviarRespuestaAsync(4, p4));
 
             MessageBox.Show("Respuesta enviada!");
             this.Close();
