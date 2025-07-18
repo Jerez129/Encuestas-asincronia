@@ -45,8 +45,8 @@ namespace Encuestas_asincronia
                 return; // Si alguna pregunta no está respondida, salimos del método
             }
 
-            // Se envían las respuestas de forma asíncrona, una por una
-             await Task.WhenAll(
+            //se envían las respuestas de forma asíncrona al objeto Datos, Se ejecuta cada envío de respuesta en paralelo
+            await Task.WhenAll(
                  datos.EnviarRespuestaAsync(1, p1),
                 datos.EnviarRespuestaAsync(2, p2),
                 datos.EnviarRespuestaAsync(3, p3),
